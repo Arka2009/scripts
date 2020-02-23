@@ -30,6 +30,7 @@ cmake -G "Unix Makefiles" \
 -DPYTHON_EXECUTABLE=$(which python3) \
 -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 -DLLVM_ENABLE_CXX1Y=ON \
+-DLLVM_TARGETS_TO_BUILD="X86" \
 ../llvm
 ```
 

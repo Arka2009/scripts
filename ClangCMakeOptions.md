@@ -23,7 +23,8 @@ cd ${cwd}
 3. ```-DLIBOMP_USE_DEBUGGER=on``` - This option is not necessary for KMP_A_DEBUG statements can be discarded. 
 
 So without these options cut-copy-paste the following
-```cmake -G "Unix Makefiles" \
+```
+cmake -G "Unix Makefiles" \
 -DLLVM_ENABLE_PROJECTS="clang;openmp" \
 -DCMAKE_INSTALL_PREFIX="/home/amaity/Desktop/ClangLLVMRoot/install" \
 -DPYTHON_EXECUTABLE=$(which python3) \

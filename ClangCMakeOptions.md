@@ -20,7 +20,16 @@ cd ${cwd}
 ### Notes on configure options
 1. ```-DLIBOMP_OPMT_SUPPORT```  - Enable [OMPT](https://www.openmp.org/spec-html/5.0/openmpch4.html#x220-10880004) interface standardized from openMP5.0. Support is experimental and not standardized
 2. ```-DLLVM_BINUTILS_INCDIR``` - enable LLVM gold plugin, for -flto. Used by the [contect](https://github.com/bprail/contech)
-3. ```-DLIBOMP_USE_DEBUGGER=on``` - This option is not necessary for KMP_A_DEBUG statements can be discarded.
+3. ```-DLIBOMP_USE_DEBUGGER=on``` - This option is not necessary for KMP_A_DEBUG statements can be discarded. 
+
+So without these options cut-copy-paste the following
+cmake -G "Unix Makefiles" \
+-DLLVM_ENABLE_PROJECTS="clang;openmp" \
+-DCMAKE_INSTALL_PREFIX="/home/amaity/Desktop/ClangLLVMRoot/install" \
+-DPYTHON_EXECUTABLE=$(which python3) \
+-DCMAKE_BUILD_TYPE=RelWithDebInfo \
+-DLLVM_ENABLE_CXX1Y=ON \
+../llvm
 
 ## Configuration for only openmp (Preferrable)
 ```

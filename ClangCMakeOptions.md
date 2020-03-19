@@ -32,6 +32,7 @@ cmake -G "Unix Makefiles" \
 -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 -DLLVM_ENABLE_CXX1Y=ON \
 -DLLVM_TARGETS_TO_BUILD="X86" \
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 ../llvm
 ```
 

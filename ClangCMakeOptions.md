@@ -15,6 +15,7 @@ cmake -G "Unix Makefiles" \
 -DLLVM_ENABLE_CXX1Y=ON \
 -DLLVM_BINUTILS_INCDIR=/home/amaity/Desktop/ClangLLVMRoot/binutils/include \
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+-DLLVM_ENABLE_DUMP=ON \
 ../llvm
 cd ${cwd}
 ```
@@ -33,6 +34,7 @@ cmake -G "Unix Makefiles" \
 -DLLVM_ENABLE_CXX1Y=ON \
 -DLLVM_TARGETS_TO_BUILD="X86" \
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
+-DLLVM_ENABLE_DUMP=ON \
 ../llvm
 ```
 

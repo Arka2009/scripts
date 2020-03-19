@@ -14,6 +14,7 @@ cmake -G "Unix Makefiles" \
 -DCMAKE_BUILD_TYPE=RelWithDebInfo \
 -DLLVM_ENABLE_CXX1Y=ON \
 -DLLVM_BINUTILS_INCDIR=/home/amaity/Desktop/ClangLLVMRoot/binutils/include \
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
 ../llvm
 cd ${cwd}
 ```

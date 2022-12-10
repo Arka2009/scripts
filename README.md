@@ -1,2 +1,2 @@
 # scripts
-Scripts to check process status on intel machines
+Important bash scripts and commands
